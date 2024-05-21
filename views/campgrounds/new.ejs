@@ -19,7 +19,7 @@
             </div>
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
-                <textarea class="form-control" type="text" id="mytextarea" name="campground[description]" required></textarea>
+                <textarea class="form-control" type="text" id="mytextarea" name="campground[description]"></textarea>
                 <!-- <div class="valid-feedback">
                     Looks Good!
                 </div> -->
@@ -47,11 +47,3 @@
     </div>
 </div>
 
-<script>
-    document.getElementById('myForm').addEventListener('submit', function (e) {
-        if (!tinymce.get('myTextarea').getContent()) {
-            alert('This field is required.');
-            e.preventDefault(); // Prevent form submission
-        }
-    });
-</script>
